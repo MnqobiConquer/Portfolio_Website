@@ -150,8 +150,51 @@
           </div>
         </div>
       </section>
+      <section id="weather">
+        <h2 class="section-title">Live <span>Weather</span> Updates</h2>
+        <div class="weather-widget">
+          <form>
+            <input type="text" id="name" autocomplete="off" placeholder="Enter city..." />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
       
-
+          <section class="result">
+            <figure class="name">
+              <figcaption>City</figcaption>
+              <img src="https://flagsapi.com/GB/shiny/32.png" />
+            </figure>
+      
+            <figure class="temperature">
+              <img src="https://openweathermap.org/img/wn/10d@4x.png" />
+              <figcaption>
+                <span>0</span><sup>o</sup>
+              </figcaption>
+            </figure>
+      
+            <p class="description">Weather Description</p>
+      
+            <ul>
+              <li>
+                <span>clouds</span>
+                <i class="fa-solid fa-cloud"></i>
+                <span id="clouds">0</span>%
+              </li>
+              <li>
+                <span>humidity</span>
+                <i class="fa-solid fa-droplet"></i>
+                <span id="humidity">0</span>%
+              </li>
+              <li>
+                <span>pressure</span>
+                <i class="fa-solid fa-gauge"></i>
+                <span id="pressure">0</span>hPa
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
     </main>
   </div>
 </body>
